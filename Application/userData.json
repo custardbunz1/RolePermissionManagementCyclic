@@ -1,0 +1,22 @@
+[
+    {  
+        "username" : "userAdmin1",
+        "role" : "admin",
+        "password" : "$2b$10$YPzSWPCL6KOl5.FLgoehFuSYadI6GPsvLTPmYyVoxMadqQSq17QzS"
+    },
+    {
+        "username" : "controller2",
+        "role" : "controller",
+        "password" : "$2b$10$2nqBkTxILJtEPYVOVuItDOifJeDlhVbDQGprKDasRBc0KvzhVpjsu"
+    },
+    {
+        "username" : "plannerUser",
+        "role" : "planner",
+        "password" : "$2b$10$jWJIr1cAgmztEhkS2fY3k.4f2UFKAQ6xhNLqfmLiJ.qsnHWl3sZnK"
+    },
+    {
+        "username" : "monitorA",
+        "role" : "monitoring",
+        "password" : "$2b$10$dJCDydNaFeSUSB41h3nfye4juD.vBzBQ6eYZjN7PXVaml5.BRHEde"
+    }
+]

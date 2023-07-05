@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta name="description" content="" />
+      <title>World Wines</title>
+
+      <link
+        rel="canonical"
+        href="https://getbootstrap.com/docs/4.5/examples/album/"
+      />
+
+      <!-- Bootstrap core CSS -->
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous"
+      />
+
+      <link href="css/album.css" rel="stylesheet" />
+    </head>
+    <body>
+      <%- include('common/header'); -%>
+
+      <div class="container">
+        <div><p> </p></div>
+        <h2 class="text-center">Role Permission Management Tool</h2>
+        <div class="row justify-content-md-center">
+          <div class="col-">
+            <form method="POST" action="/register">
+              <div class="form-group">
+                <label for="name">Username</label>
+                <input
+                  type="username"
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  placeholder="Enter Username"/>
+                <% if (errors['email']) { %>
+                <p style="color: red"><%= errors['username'].message %></p>
+                <% } %>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    class="form-control" 
+                    name="password" 
+                    placeholder="Enter Password"/>
+                <% if (errors['password']) { %>
+                <p style="color: red"><%= errors['password'].message %></p>
+                <% } %>
+              </div>
+              <div class="form-group">
+                <label for="role">Role</label>
+                <input 
+                  type="role" 
+                  class="form-control" 
+                  name="role"
+                  placeholder="Enter User Role"/>
+                <% if (errors['role']) { %>
+                <p style="color: red"><%= errors['role'].message %></p>
+                <% } %>
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div><p> </p></div>
+      <%- include('common/footer'); -%>
+    </body>
+  </html>
+</html>
